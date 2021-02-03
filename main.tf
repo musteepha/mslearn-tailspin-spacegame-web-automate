@@ -63,11 +63,11 @@ resource "azurerm_app_service" "spacegame_dev" {
   }
 }
 
-output "appservice_name_dev" {
+output -raw "appservice_name_dev" {
   value       = azurerm_app_service.spacegame_dev.name
   description = "The App Service name for the dev environment"
 }
-output "website_hostname_dev" {
+output -raw "website_hostname_dev" {
   value       = azurerm_app_service.spacegame_dev.default_site_hostname
   description = "The hostname of the website in the dev environment"
 }
