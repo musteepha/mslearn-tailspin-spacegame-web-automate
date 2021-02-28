@@ -82,8 +82,8 @@
                 "[resourceId('Microsoft.Sql/servers', concat(parameters('servers_tailspin_space_game_sql_name'), variables('uniqueName')))]"
             ],
             "properties": {
-                "startIpAddress": "86.19.213.60",
-                "endIpAddress": "86.19.213.60"
+                "startIpAddress": "0.0.0.0",
+                "endIpAddress": "0.0.0.0"
             }
         },
         {
