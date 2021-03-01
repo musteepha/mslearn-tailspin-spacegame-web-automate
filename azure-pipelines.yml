@@ -93,6 +93,8 @@ stages:
           pathToPublish: '$(Build.ArtifactStagingDirectory)'
           artifactName: dropDacpac
         condition: succeededOrFailed()
+
+        
   
   - stage: 'Provision'
     displayName: 'Provision the database and web application'
